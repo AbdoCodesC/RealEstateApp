@@ -9,9 +9,7 @@ import {
 import { useEffect } from "react";
 import { router, useLocalSearchParams } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-
 import icons from "@/constants/icons";
-
 import Search from "@/components/Search";
 import Filters from "@/components/Filters";
 import { Card, FeaturedCard } from "@/components/Cards";
@@ -20,6 +18,8 @@ import { useAppwrite } from "@/lib/useAppwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 import { getLatestProperties, getProperties } from "@/lib/appwrite";
 import NoResults from "@/components/NoResults";
+
+// update
 
 const Home = () => {
   const { user } = useGlobalContext();
