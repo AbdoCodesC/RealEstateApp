@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const FeaturedCard = ({
-  item: { image, rating, price, address, type },
+  item: { image, rating, price, address, name },
   onPress,
 }: Props) => {
   return (
@@ -34,7 +34,7 @@ export const FeaturedCard = ({
           className="text-xl font-rubik-extrabold text-white"
           numberOfLines={1}
         >
-          {type}
+          {name}
         </Text>
         <Text className=" text-base font-rubik text-white">{address}</Text>
         <View className="flex flex-row items-center justify-between w-full">
@@ -49,7 +49,7 @@ export const FeaturedCard = ({
 };
 
 export const Card = ({
-  item: { image, rating, price, address, type },
+  item: { image, rating, price, address, name },
   onPress,
 }: Props) => {
   return (
@@ -65,7 +65,7 @@ export const Card = ({
       </View>
       <Image source={{ uri: image }} className="w-full h-40 rounded-lg" />
       <View className="flex flex-col mt-2 ">
-        <Text className="text-base font-rubik-bold text-black-300">{type}</Text>
+        <Text className="text-base font-rubik-bold text-black-300">{name}</Text>
         <Text className=" text-xs font-rubik text-black-200">{address}</Text>
         <View className="flex flex-row items-center justify-between mt-2 ">
           <Text className="text-base font-rubik-bold text-primary-300">

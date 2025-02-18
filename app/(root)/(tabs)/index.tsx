@@ -19,8 +19,6 @@ import { useGlobalContext } from "@/lib/global-provider";
 import { getLatestProperties, getProperties } from "@/lib/appwrite";
 import NoResults from "@/components/NoResults";
 
-// update
-
 const Home = () => {
   const { user } = useGlobalContext();
 
